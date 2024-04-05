@@ -46,7 +46,7 @@ export default function Home() {
     fetchOfferListings();
   }, []);
   return (
-    <div className='w-full mx-auto'>
+    <div className=''>
       {/* top */}
       <div className='flex flex-col gap-6 p-8 px-3 max-w-6xl mx-auto'>
         <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl'>
@@ -87,7 +87,6 @@ export default function Home() {
       </Swiper>
 
       {/* listing results for offer, sale and rent */}
-
       <div className='max-w-6xl mx-auto p-3 flex flex-col gap-6 my-4'>
         {offerListings && offerListings.length > 0 && (
           <div className=''>
